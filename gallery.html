@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Оновлене меню навігації -->
+    <!-- П. 1: Головне меню з посиланням на Галерею -->
     <nav>
         <ul>
             <li><a href="index.html">Головна</a></li>
@@ -20,62 +20,99 @@
     </nav>
 
     <header>
-        <h1>Галерея зображень та SVG</h1>
+        <h1>Галерея та медіа-елементи</h1>
     </header>
 
     <main>
-        <h2>Робота з растровими зображеннями</h2>
-
-        <!-- П. 2: Оригінальне зображення -->
-        <p>Оригінальний розмір:</p>
-        <img src="https://picsum.photos/id/1015/600/400" alt="Мальовничий пейзаж">
-
-        <!-- П. 3: Ширина 500 -->
-        <p>Зміна ширини (500px):</p>
-        <img src="https://picsum.photos/id/1015/600/400" alt="Мальовничий пейзаж" width="500">
-
+          <section>
+    <h2>2. Оригінальне зображення</h2>
+    <img src="photo.jpg" alt="Мальовничий пейзаж">
+</section>
+<!-- П. 3: Ширина 500 -->
+<section>
+    <h2>3. Зображення з шириною 500px</h2>
+    <img src="photo.jpg" alt="Мальовничий пейзаж" width="500">
+</section>
         <!-- П. 4: Висота 300 -->
-        <p>Зміна висоти (300px):</p>
-        <img src="https://picsum.photos/id/1015/600/400" alt="Мальовничий пейзаж" height="300">
+        <section>
+            <h2>4. Зображення з висотою 300px</h2>
+            <img src="photo.jpg" alt="Мальовничий пейзаж" height="300">
+        </section>
 
         <!-- П. 5: Ширина та висота 400 -->
-        <p>Зміна ширини та висоти (400x400px):</p>
-        <img src="https://picsum.photos/id/1015/600/400" alt="Мальовничий пейзаж" width="400" height="400">
+        <section>
+            <h2>5. Зображення 400x400px</h2>
+            <img src="photo.jpg" alt="Мальовничий пейзаж" width="400" height="400">
+        </section>
 
-        <hr>
-
-        <h2>Векторні SVG елементи</h2>
-
-        <!-- П. 6: Прямокутник SVG 100x100 з координатами 20, 20 та розміром 20 -->
-        <h3>Прямокутник SVG</h3>
-        <svg width="100" height="100" style="border: 1px solid #ccc;">
-            <rect x="20" y="20" width="20" height="20" fill="royalblue" />
-        </svg>
+        <!-- П. 6: Прямокутник SVG 100x100 з координатами 20, 20 і розміром 20 -->
+        <section>
+            <h2>6. Прямокутник SVG (100x100)</h2>
+            <svg width="100" height="100" style="border: 1px solid #ccc;">
+                <rect x="20" y="20" width="20" height="20" fill="royalblue" />
+            </svg>
+        </section>
 
         <!-- П. 7: Коло SVG 200x200 (r=60, cx=100, cy=70) -->
-        <h3>Коло SVG</h3>
-        <svg width="200" height="200" style="border: 1px solid #ccc;">
-            <circle cx="100" cy="70" r="60" fill="coral" />
-        </svg>
+        <section>
+            <h2>7. Коло SVG (200x200)</h2>
+            <svg width="200" height="200" style="border: 1px solid #ccc;">
+                <circle cx="100" cy="70" r="60" fill="coral" />
+            </svg>
+        </section>
 
         <!-- П. 8: Годинник SVG (показує 3 години) -->
-        <h3>Годинник SVG (3:00)</h3>
-        <svg width="200" height="200">
-            <!-- Циферблат -->
-            <circle cx="100" cy="100" r="80" fill="white" stroke="black" stroke-width="4"/>
-            <circle cx="100" cy="100" r="5" fill="black"/>
-            <!-- Хвилинна стрілка вказує на 12 (вгору) -->
-            <line x1="100" y1="100" x2="100" y2="35" stroke="black" stroke-width="4" stroke-linecap="round"/>
-            <!-- Годинна стрілка вказує на 3 (праворуч) -->
-            <line x1="100" y1="100" x2="155" y2="100" stroke="black" stroke-width="6" stroke-linecap="round"/>
-        </svg>
+        <section>
+            <h2>8. Годинник SVG (3 години)</h2>
+            <svg width="200" height="200">
+                <!-- Контур годинника -->
+                <circle cx="100" cy="100" r="80" fill="white" stroke="black" stroke-width="4"/>
+                <circle cx="100" cy="100" r="5" fill="black"/>
+                <!-- Хвилинна стрілка (на 12 годин) -->
+                <line x1="100" y1="100" x2="100" y2="35" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                <!-- Годинна стрілка (на 3 години) -->
+                <line x1="100" y1="100" x2="155" y2="100" stroke="black" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+        </section>
     </main>
 
     <footer>
         <section>
+            <div>
+                <h2>About</h2>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">eBooks</a></li>
+                    <li><a href="#">Webinars</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Advertise</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
             <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
                 <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li>&copy; 2026 Персональний сайт</li>
+                <li>&copy; 2024 Copyright Shopaholic Inc.</li>
             </ul>
         </section>
     </footer>
