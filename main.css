@@ -33,3 +33,16 @@ h1, h2, h3 {
 .heading {
     color: green;
 }
+
+/* 8. Завдання з em: div та span */
+div {
+    font-size: 1em;
+}
+
+span {
+    font-size: 1.6em;
+}
+/* Розрахунок font-size в rem */
+strong {
+    font-size: 1.6rem;
+}
