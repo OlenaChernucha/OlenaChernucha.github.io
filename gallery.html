@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея</title>
 
+    <!-- Іконка сайту -->
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <!-- Бібліотека Normalize.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Власні стилі CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <!-- П. 1: Головне меню з посиланням на Галерею -->
     <nav>
         <ul>
             <li><a href="index.html">Головна</a></li>
@@ -25,16 +28,19 @@
         <h1>Галерея та медіа-елементи</h1>
     </header>
 
-    <main>
-          <section>
-    <h2>2. Оригінальне зображення</h2>
-    <img src="photo.jpg" alt="Мальовничий пейзаж">
-</section>
-<!-- П. 3: Ширина 500 -->
-<section>
-    <h2>3. Зображення з шириною 500px</h2>
-    <img src="photo.jpg" alt="Мальовничий пейзаж" width="500">
-</section>
+    <main id="main">
+        <!-- П. 2: Оригінальне зображення -->
+        <section>
+            <h2>2. Оригінальне зображення</h2>
+            <img src="photo.jpg" alt="Мальовничий пейзаж">
+        </section>
+
+        <!-- П. 3: Ширина 500 -->
+        <section>
+            <h2>3. Зображення з шириною 500px</h2>
+            <img src="photo.jpg" alt="Мальовничий пейзаж" width="500">
+        </section>
+
         <!-- П. 4: Висота 300 -->
         <section>
             <h2>4. Зображення з висотою 300px</h2>
@@ -67,12 +73,9 @@
         <section>
             <h2>8. Годинник SVG (3 години)</h2>
             <svg width="200" height="200">
-                <!-- Контур годинника -->
                 <circle cx="100" cy="100" r="80" fill="white" stroke="black" stroke-width="4"/>
                 <circle cx="100" cy="100" r="5" fill="black"/>
-                <!-- Хвилинна стрілка (на 12 годин) -->
                 <line x1="100" y1="100" x2="100" y2="35" stroke="black" stroke-width="4" stroke-linecap="round"/>
-                <!-- Годинна стрілка (на 3 години) -->
                 <line x1="100" y1="100" x2="155" y2="100" stroke="black" stroke-width="6" stroke-linecap="round"/>
             </svg>
         </section>
@@ -109,12 +112,24 @@
             </div>
         </section>
 
+        <!-- Секція соціальних мереж -->
+        <section class="footer-social">
+            <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+
         <section>
             <ul>
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+                <li>&copy; 2026 навчання</li>
             </ul>
         </section>
     </footer>
