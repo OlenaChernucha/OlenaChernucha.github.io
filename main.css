@@ -1,61 +1,64 @@
+/* Імпорт іконок Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
 /* 1. Кореневий елемент (html) */
 html {
-    font-size: 100%;
+font-size: 100%;
 }
 
 /* 2. Елемент body */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
 }
 
 /* 3. Заголовки h1, h2, h3 (колір та жирність) */
 h1, h2, h3 {
-    color: gray;
-    font-weight: 700;
+color: gray;
+font-weight: 700;
 }
 
 /* 4. Індивідуальні розміри для h1 та h2 */
 h1 {
-    font-size: 1.45rem;
+font-size: 1.45rem;
 }
 
 h2 {
-    font-size: 1.3rem;
+font-size: 1.3rem;
 }
 
 /* 5. Кольори для ідентифікаторів та класів */
 #main {
-    color: #e60202;
+color: #e60202;
 }
 
 .h2 {
-    color: red;
+color: red;
 }
 
 .heading {
-    color: green;
+color: green;
 }
 
 /* 6. Завдання з em: div та span */
 div {
-    font-size: 1em;
+font-size: 1em;
 }
 
 span {
-    font-size: 1.6em;
+font-size: 1.6em;
 }
 
 /* 7. Завдання з rem: strong */
 strong {
-    font-size: 1.6rem;
+font-size: 1.6rem;
 }
 
 /* 8. Нові класи */
 .list-unstyled {
-    list-style: none;
+list-style: none;
 }
 
 .footer-social {
-    
+
 }
