@@ -112,14 +112,6 @@ footer ul {
   list-style: none;
 }
 
-/* Меню */
-.nav-links {
-  display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 16px 20px;
-}
-
 /* Завдання з em: тільки в <main>, щоб не зачепити футер */
 .main div {
   font-size: 1.6em; /* 16px × 1.6 = 25.6px */
@@ -168,6 +160,25 @@ strong {
 .footer-social a {
   font-size: 1.5rem;
 }
+
 .navbar {
   background: var(--bgHeader);
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 16px 20px; /* відступ згори й зліва */
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
 }

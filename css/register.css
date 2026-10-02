@@ -70,3 +70,38 @@
 .register-form button:hover {
   background: linear-gradient(to bottom, #c9f9d1, #4fcb6b);
 }
+.register-toggle {
+  max-width: 480px;
+  margin: 24px auto 0;
+}
+
+.register-toggle summary {
+  padding: 12px 16px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #2f7dff, #03143a);
+  border-radius: 8px;
+  list-style: none;
+}
+
+.register-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.register-toggle summary::after {
+  content: " ▾";
+}
+
+.register-toggle[open] summary::after {
+  content: " ▴";
+}
+
+.register-toggle summary:hover {
+  text-decoration: underline;
+}
+
+.register-toggle .register-form {
+  margin-top: 12px;
+}

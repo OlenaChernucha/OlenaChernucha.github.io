@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна сторінка</title>
+    <title>Реєстрація</title>
 
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
 
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/register.css">
-
 </head>
 <body class="body">
     <nav class="navbar">
@@ -29,83 +28,57 @@
     </nav>
 
     <header>
-        <h1>Ласкаво просимо на мій сайт!</h1>
+        <h1>Реєстрація</h1>
     </header>
 
     <main class="main">
-        <div>
-            <span>Outer <span>inner</span> outer</span>
-        </div>
-
-        <div>
-            <strong>Outer <strong>inner</strong> outer</strong>
-        </div>
-
-        <h2>Gradient Text Glow</h2>
-
-        <div class="percents">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
-        </div>
-
-        <div class="negative">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
-        </div>
-
-        <div class="radial">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
-        </div>
-
-        <p>Це головна сторінка мого першого проєкту. Тут ви знайдете найсвіжіші новини та оновлення.</p>
-        <details class="register-toggle">
-    <summary>Реєстрація</summary>
-
-    <form class="register-form">
-        <div class="form-group">
-            <label for="lastname">І'мя:</label>
-            <input type="text" id="lastname" name="lastname" required>
-        </div>
-
-        <div class="form-group">
-            <label for="firstname">Прізвище:</label>
-            <input type="text" id="firstname" name="firstname" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Едектронна адреса:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-
-        <div class="form-group">
-            <label for="confirm-password">Підтвердження паролю:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-
-        <div class="form-group">
-            <label for="phonenumber">Номер телефону:</label>
-            <input type="tel" id="phonenumber" name="phonenumber" required>
-        </div>
-
-        <div class="form-group">
-            <span class="group-title">Стать:</span>
-            <div class="radio-row">
-                <label for="female">
-                    <input type="radio" id="female" name="gender" value="female"> Чоловік
-                </label>
-                <label for="male">
-                    <input type="radio" id="male" name="gender" value="male"> Жінка
-                </label>
+        <form class="register-form">
+          <form
+          action="/register" method="POST" id="registerForm" class="register-form">
+            <div class="form-group">
+                <label for="lastname">І'мя:</label>
+                <input type="text" id="lastname" name="lastname" required>
             </div>
-        </div>
 
-        <button type="submit">Реєстрація</button>
-    </form>
-</details>
+            <div class="form-group">
+                <label for="firstname">Прізвище:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
 
+            <div class="form-group">
+                <label for="email">Електронна адреса:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Підтвердження паролю:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phonenumber">Номер телефону:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" required>
+            </div>
+
+            <div class="form-group">
+                <span class="group-title">Стать:</span>
+                <div class="radio-row">
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Чоловік
+                    </label>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Жінка
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Реєстрація</button>
+        </form>
     </main>
 
     <footer>
