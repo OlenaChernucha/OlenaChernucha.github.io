@@ -7,18 +7,17 @@
 
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
-
     <!-- Google Fonts: Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    <nav>
-        <ul>
+<body class="body">
+    <nav class="navbar">
+        <ul class="nav-links">
             <li><a href="index.html">Головна</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -26,26 +25,40 @@
             <li><a href="gallery.html">Галерея</a></li>
         </ul>
     </nav>
+
     <header>
         <h1>Ласкаво просимо на мій сайт!</h1>
     </header>
-    <main>
-        <p>Це головна сторінка мого першого проєкту. Тут ви знайдете найсвіжіші новини та оновлення.</p>
-        
-        <!-- Доданий блок з розрахунком em -->
+
+    <main class="main">
         <div>
             <span>Outer <span>inner</span> outer</span>
         </div>
-        
-        <!-- НОВИЙ блок для розрахунку rem (однаковий розмір) -->
+
         <div>
             <strong>Outer <strong>inner</strong> outer</strong>
         </div>
+
+        <h2>Gradient Text Glow</h2>
+
+        <div class="percents">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        </div>
+
+        <div class="negative">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        </div>
+
+        <div class="radial">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+        </div>
+
+        <p>Це головна сторінка мого першого проєкту. Тут ви знайдете найсвіжіші новини та оновлення.</p>
     </main>
+
     <footer>
-        <!-- Основна секція -->
-        <section>
-            <div>
+        <section class="footer-links">
+            <div class="footer-links-item">
                 <h2>About</h2>
                 <ul>
                     <li><a href="#">Services</a></li>
@@ -55,18 +68,19 @@
                     <li><a href="#">Careers</a></li>
                 </ul>
             </div>
-            
-            <div>
+
+            <div class="footer-links-item">
                 <h2>Resources</h2>
                 <ul>
                     <li><a href="#">Docs</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">eBooks</a></li>
                     <li><a href="#">Webinars</a></li>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google Search</a></li>
                 </ul>
             </div>
-            
-            <div>
+
+            <div class="footer-links-item">
                 <h2>Contact</h2>
                 <ul>
                     <li><a href="#">Help</a></li>
@@ -76,26 +90,23 @@
             </div>
         </section>
 
-        <!-- Нова секція соціальних мереж -->
         <section class="footer-social">
             <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </section>
 
-        <!-- Footer legal -->
-        <section>
+        <section class="footer-legal">
             <ul>
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <!-- Абсолютне посилання -->
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li>&copy; 2026 навчання </li>
+                <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+                <li>&copy; 2026 навчання</li>
             </ul>
         </section>
     </footer>

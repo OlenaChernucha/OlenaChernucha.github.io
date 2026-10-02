@@ -1,0 +1,173 @@
+/* Імпорт іконок Font Awesome (має бути першим правилом у файлі) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css");
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --bgColorMain: #1a1d20;
+  --bgHeader: linear-gradient(to bottom, #2f7dff 0%, #0a3a9e 55%, #03143a 100%);
+  --bgFooter: linear-gradient(to bottom, #03143a 0%, #0a3a9e 45%, #2f7dff 100%);
+  --textColorMain: #ffffff;
+}
+
+header {
+  background: var(--bgHeader);
+}
+
+footer {
+  background: var(--bgFooter);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--textColorMain);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Лінійний градієнт вправо, світло-зелений → темно-зелений */
+.body {
+  background: linear-gradient(
+    to right,
+    #b6f5c0 5%,
+    #7fdc8f 17%,
+    #3fb85a 40%,
+    #1e7a3a 85%,
+    #0b4a20 95%
+  );
+  background-color: var(--bgColorMain); /* запасний колір, після background */
+  background-attachment: fixed;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); /* читабельність білого тексту */
+}
+
+/* Посилання успадковують колір тексту, без синього й фіолетового */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Лінійний градієнт вліво, світло-синій → темно-синій */
+.negative {
+  background: linear-gradient(
+    to left,
+    #a8d4ff -50%,
+    #5aa0f0 -10%,
+    #2a6fdb 0%,
+    #123f9e 100%,
+    #031a52 150%
+  );
+}
+
+/* Лінійний градієнт вниз, зупинки в em, світло-зелений → темно-зелений */
+.percents {
+  background: linear-gradient(
+    to bottom,
+    #b6f5c0 2em,
+    #8fe3a0 4em,
+    #5fc97a 8em,
+    #3fa85c 16em,
+    #2a8444 32em,
+    #17602f 64em,
+    #0b4a20 128em
+  );
+}
+
+/* Два радіальних градієнти: помаранчевий вгору, червоний вниз */
+.radial {
+  background:
+    radial-gradient(ellipse at top, orange, transparent),
+    radial-gradient(ellipse at bottom, red, transparent);
+}
+
+.main {
+  padding: 20px;
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 1.45rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+
+/* Списки */
+.list-unstyled,
+.nav-links,
+footer ul {
+  list-style: none;
+}
+
+/* Меню */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 16px 20px;
+}
+
+/* Завдання з em: тільки в <main>, щоб не зачепити футер */
+.main div {
+  font-size: 1.6em; /* 16px × 1.6 = 25.6px */
+}
+.main span {
+  font-size: 1em; /* зовнішній span успадковує 25.6px */
+}
+.main span span {
+  font-size: 1.6em; /* 25.6px × 1.6 = 40.96px */
+}
+strong {
+  font-size: 1.6rem; /* 25.6px, rem не залежить від вкладеності */
+}
+
+/* Футер */
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding: 20px;
+}
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social {
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+.footer-legal {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+.footer-legal ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-social a {
+  font-size: 1.5rem;
+}
+.navbar {
+  background: var(--bgHeader);
+}
