@@ -7,6 +7,10 @@
   height: 150px;
 }
 
+.box1 {
+  box-sizing: content-box;
+}
+
 .box span {
   display: inline-block;
   background-color: pink;
