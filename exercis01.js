@@ -1,6 +1,6 @@
 'use strict';
 
-// -alert із двох змінних---
+// -alert із двох змінних-
 const message1 = 'Hello';
 const message2 = 'JavaScript';
 
