@@ -112,18 +112,15 @@ footer ul {
   list-style: none;
 }
 
-/* Завдання з em: тільки в <main>, щоб не зачепити футер */
-.main div {
-  font-size: 1.6em; /* 16px × 1.6 = 25.6px */
+/* Завдання з em */
+div {
+  font-size: 1em;
 }
-.main span {
-  font-size: 1em; /* зовнішній span успадковує 25.6px */
-}
-.main span span {
-  font-size: 1.6em; /* 25.6px × 1.6 = 40.96px */
+span {
+  font-size: 1.6em;
 }
 strong {
-  font-size: 1.6rem; /* 25.6px, rem не залежить від вкладеності */
+  font-size: 1.6rem;
 }
 
 /* Футер */
