@@ -114,10 +114,10 @@ footer ul {
 
 /* Завдання з em */
 div {
-  font-size: 1em;
+  font-size: Xem;
 }
 span {
-  font-size: 1.6em;
+  font-size: Yem;
 }
 strong {
   font-size: 1.6rem;
